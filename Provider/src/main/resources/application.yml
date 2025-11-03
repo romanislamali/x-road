@@ -1,0 +1,13 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /provider
+
+spring:
+  application:
+    name: xroad-provider-app
+
+logging:
+  level:
+    com.example.provider: DEBUG
+    org.springframework.web: INFO
