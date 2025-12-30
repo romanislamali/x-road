@@ -1,0 +1,13 @@
+version: "3.8"
+
+services:
+  xroad-provider:
+    build: .
+    container_name: xroad-provider
+    ports:
+      - "8080:8080"
+    networks:
+      - xroad-network
+networks:
+  xroad-network:
+    external: true
