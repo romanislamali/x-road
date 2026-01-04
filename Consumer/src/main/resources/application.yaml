@@ -1,0 +1,17 @@
+server:
+  port: 8081
+  servlet:
+    context-path: /consumer
+
+xroad:
+  security-server-url: http://localhost:2080
+  client-id: DEV/GOV/1234/CONSUMER-APP
+  provider-service-url: /r1/DEV/GOV/1234/PROVIDER-APP/provider-api
+  rest-template:
+    ssl:
+      verification-mode: NONE
+
+logging:
+  level:
+    root: INFO
+    com.example.consumer: DEBUG
